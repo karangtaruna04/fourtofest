@@ -13,7 +13,6 @@ window.onscroll = function () {
 // Hamberger
 const hamburger = document.querySelector("#hamburger");
 const navMenu = document.querySelector("#nav-menu");
-const Maha = document.querySelector(".maha");
 
 hamburger.addEventListener("click", function () {
   hamburger.classList.toggle("hamburger-active");
@@ -51,7 +50,7 @@ async function handleSubmit(event) {
     .then((response) => {
       // ketika berhasil tampilkan alert dan ubah btn Loading jadi Submit
       myAlert.classList.toggle("hidden");
-      status.innerHTML = "<b>Thank you!</b> your message was sent successfully";
+      status.innerHTML = "<b>Terima kasih!</b> Pesan Anda Sudah Terkirim.";
       setTimeout(function () {
         myAlert.classList.toggle("hidden");
       }, 5000);
